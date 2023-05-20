@@ -1,0 +1,111 @@
+---
+name: Jacob
+surname: Krol
+position: "Computational Biologist/Professional RA"
+address: "Denver, CO & Saline, MI"
+email: "jacob.krol@cuanschutz.edu"
+github: jakekrol 
+linkedin: jacob-krol-b3b784156
+date: "`r format(Sys.time(), '%B %Y')`"
+docname: "curriculum vitae"
+aboutme: "I enjoy most things related to science, math, and engineering. It brings me tremendous fulfillment to solve challenging, relevant problems in these fields using computational approaches."
+headcolor: "0F2137"
+output: 
+  vitae::moderncv:
+    theme: "fancy"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(tibble)
+```
+
+# Professional Experience
+
+```{r professional_experience}
+tribble(
+  ~ Title, ~ Date, ~ Institution, ~ Where, ~ Bullets,
+  ### Job 1
+  "Information Sciences Professional (PRA)", 
+  "2022-2023", 
+  "Dept. of Biomedical Informatics, Center for Health Artificial Intelligence, University of Colorado Anschutz School of Medicine - JRaviLab", 
+  "Aurora, CO", 
+  ## bullets
+  c("Front and backend web devlopment for a protein analysis app (http://jravilab.org/molevolvr/?r=&p=home)", 
+    "Created a full pipeline for training high accuracy machine learning models that collect, featurize, and train on public datasets to predict novel genes that contribute to antibiotic resistance in the ESKAPE pathogenic organisms",
+    "Work closely with the Department of Biomedical Informatics software engineering team on web development, server on-boarding, installations, environment setup, and more",
+    "Hosted multiple in-group workshops on Bash, Git, and ssh (remote server work) basics",
+    "Assisted in webserver migration of data, software, and our web-application from Michigan State University to Colorado University",
+    "Setting up custom environments by writing dockerfiles",
+    "Software used frequently: Github/Git, R (tidyverse, tidymodels, httr, Shiny, data.table, Biostrings, & more), Python (Pandas, Numpy, Scikit-learn, Matplotlib, & more), Bash, Docker, various CLI tools, & many more"),
+  ### Job 2
+  "Student Research Assistant II", 
+  "2022", 
+  "Computational Mathematics Science and Engineering program, Michigan State University - Krishnan Lab & Malmstrom Lab", 
+  "East Lansing, MI", 
+  ## bullets
+  c("Training machine learning classifier models to predict plant virus host types and separate models to predict plant virus taxonomy.", 
+    "Featurization and data wrangling with Pandas, Biopython, & Numpy",
+    "Analyzing and visualizing model performance with Matplotlib/Seaborn", 
+    "Gave frequent presentations and updates to 3 co-PIs involved in project")
+) %>%
+    detailed_entries(Title, Date, Institution, Where, Bullets)
+
+```
+
+# Education
+```{r education}
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where, ~ GPA, ~ Status,
+  "B.Sc Computational Neuroscience", "2020-2022", "Michigan State University", "East Lansing, Michigan", "GPA: 3.89", "Graduation Award: 'With Honor'",
+
+  "Math and Science Transfer Program", "2018-2020", "Washtenaw Community College", "Ann Arbor, MI", "GPA: 3.52", "Transferred"
+) %>% 
+  detailed_entries(Degree, Year, Institution, Where, c(GPA, Status))
+```
+
+# Presentations & posters
+```{r presentations_and_posters}
+tribble(
+  ~ Conference, ~ Year, ~ Title, ~ Where, ~ About,
+  "Great Lakes Bioinformatics Conference", 2023, "MolevolvR a web-app for protein characterization", "Montreal, CA", "Discussed the development and future directions of a web-app I assisted in developing: http://jravilab.org/molevolvr",
+  "Great Lakes Bioinformatics Conference", 2023, "How and when to build a web-app or R package?", "Montreal, CA", "Co-hosted a 4 hour in-person workshop on how to build an R package using automation: devtools and usethis. A github repo for a sample R package I wrote is located at http://www.github.com/jravilab/iprscanr. My section was 1 hour out of the total 4."
+  ) %>% 
+  detailed_entries(Conference, Year, Title, Where, About)
+```
+
+# Professional Summary
+```{r professional_summary}
+tribble(
+  ~ What, ~ When, ~ With,
+  # place first sentence in What field (do not include period)
+  "I program in R, Python, and Bash/shell on and off HPC to train 
+predictive machine learning models that leverage large, public biological datasets",
+  "", # When (empty)
+  # With (body of text)
+  "For instance, I've trained models that predict genes associated with antibiotic resistant in microbial pathogens and models that predict plant viruses' hosts.
+  I've also been maintaining and upgrading a 
+  protein analysis app (http://jravilab.org/molevolvr/?r=&p=home) built with the 
+  R shiny framework which uses a PBS Torque scheduler on the backend to handle job submissions.
+  Using Git, Docker, virtual environments, and pre-commit with linters, I try to ensure my code is reproducible and readable. 
+  I've been using Linux-based OSs for over 3 years, and through work I've 
+  spent a good amount of time assisting undergrads and grad students in working 
+  from the command line including multiple in-person and remote workshops."
+) %>% 
+  brief_entries(What, When, With)
+```
+
+# References
+```{r references}
+tribble(
+  ~ Who, ~ When, ~ With, ~ Where, ~ Bullets,
+  # Ref 1
+  "Janani Ravi", "2022-2023", "University of Colorado Anschutz School of Medicine", "Aurora, CO", c("janani.ravi@cuanschutz.edu", "Principal investigator of JRaviLab"),
+  # Ref 2
+  "Faisal Alquaddoomi", "2022-2023", "University of Colorado Anschutz Anschutz School of Medicine", "Aurora, CO", c("faisal.alquaddoomi@cuanschutz.edu", "Software engineer"),
+  # Ref 3
+  "Arjun Krishnan", "2022", "Michigan State University", "East Lansing, MI", c("arjun.krishnan@cuanschutz.edu", "Principal invesigator of Krishnan Lab")
+) %>%
+  detailed_entries(Who, When, With, Where, Bullets)
+```
