@@ -22,32 +22,31 @@ library(tibble)
 ```
 
 # Professional Experience
-
 ```{r professional_experience}
 tribble(
   ~ Title, ~ Date, ~ Institution, ~ Where, ~ Bullets,
   ### Job 1
-  "Information Sciences Professional (PRA)", 
-  "2022-2023", 
+  "Information Sciences Professional (PRA)",
+  "2022-2023",
   "Dept. of Biomedical Informatics, Center for Health Artificial Intelligence, University of Colorado Anschutz School of Medicine - JRaviLab", 
-  "Aurora, CO", 
+  "Aurora, CO",
   ## bullets
-  c("Front and backend web devlopment for a protein analysis app (http://jravilab.org/molevolvr/?r=&p=home)", 
-    "Created a full pipeline for training high accuracy machine learning models that collect, featurize, and train on public datasets to predict novel genes that contribute to antibiotic resistance in the ESKAPE pathogenic organisms",
+  c("Front and backend web devlopment for a protein analysis app (http://jravilab.org/molevolvr/?r=&p=home) [R + Slurm + batch scripts]", 
+    "Developed a full pipeline for training high accuracy machine learning models that collect, featurize, and train on public datasets to predict novel biological features (e.g., genes) that contribute to antibiotic resistance in the ESKAPE pathogenic organisms",
     "Work closely with the Department of Biomedical Informatics software engineering team on web development, server on-boarding, installations, environment setup, and more",
-    "Hosted multiple in-group workshops on Bash, Git, and ssh (remote server work) basics",
-    "Assisted in webserver migration of data, software, and our web-application from Michigan State University to Colorado University",
-    "Setting up custom environments by writing dockerfiles",
-    "Software used frequently: Github/Git, R (tidyverse, tidymodels, httr, Shiny, data.table, Biostrings, & more), Python (Pandas, Numpy, Scikit-learn, Matplotlib, & more), Bash, Docker, various CLI tools, & many more"),
+    "Hosted multiple workshops on Bash, Git, and ssh-workflow basics",
+    "Creating docker environments for projects/app",
+    "Assisted in migration of data, software, and our web-application from Michigan State University to Colorado University",
+    "Software used frequently: Github/Git, R (tidyverse, BioConductor suite, httr, Shiny, & much more), Python (Pandas, Numpy, Scikit-learn, Matplotlib, & more), Bash, Docker, various CLI tools, & many more"),
   ### Job 2
-  "Student Research Assistant II", 
-  "2022", 
+  "Student Research Assistant II",
+  "2022",
   "Computational Mathematics Science and Engineering program, Michigan State University - Krishnan Lab & Malmstrom Lab", 
-  "East Lansing, MI", 
+  "East Lansing, MI",
   ## bullets
-  c("Training machine learning classifier models to predict plant virus host types and separate models to predict plant virus taxonomy.", 
-    "Featurization and data wrangling with Pandas, Biopython, & Numpy",
-    "Analyzing and visualizing model performance with Matplotlib/Seaborn", 
+  c("Trained machine learning classifiers to predict plant virus' host types; also, trained models to predict plant virus taxonomy.", 
+    "Featurization and data wrangling with Pandas, Biopython, NumPy, and R packages for biological feature extraction",
+    "Analyzing and visualizing model performance with Matplotlib/Seaborn & Scikit-learn performance metrics", 
     "Gave frequent presentations and updates to 3 co-PIs involved in project")
 ) %>%
     detailed_entries(Title, Date, Institution, Where, Bullets)
@@ -69,7 +68,7 @@ tribble(
 ```{r presentations_and_posters}
 tribble(
   ~ Conference, ~ Year, ~ Title, ~ Where, ~ About,
-  "Great Lakes Bioinformatics Conference", 2023, "MolevolvR a web-app for protein characterization", "Montreal, CA", "Discussed the development and future directions of a web-app I assisted in developing: http://jravilab.org/molevolvr",
+  "Great Lakes Bioinformatics Conference", 2023, "MolevolvR a web-app for protein characterization", "Montreal, CA", "Discussed the development and future directions of a web-app I develop: http://jravilab.org/molevolvr",
   "Great Lakes Bioinformatics Conference", 2023, "How and when to build a web-app or R package?", "Montreal, CA", "Co-hosted a 4 hour in-person workshop on how to build an R package using automation: devtools and usethis. A github repo for a sample R package I wrote is located at http://www.github.com/jravilab/iprscanr. My section was 1 hour out of the total 4."
   ) %>% 
   detailed_entries(Conference, Year, Title, Where, About)
