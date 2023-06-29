@@ -8,7 +8,7 @@ github: jakekrol
 linkedin: jacob-krol-b3b784156
 date: "`r format(Sys.time(), '%B %Y')`"
 docname: "curriculum vitae"
-aboutme: "I enjoy most things related to science, math, and engineering. It brings me tremendous fulfillment to solve challenging, relevant problems in these fields using computational approaches."
+aboutme: "I enjoy solving relvant, challenging problems in science using computational approaches."
 headcolor: "0F2137"
 output: 
   vitae::moderncv:
@@ -31,21 +31,22 @@ tribble(
   "Dept. of Biomedical Informatics, Center for Health Artificial Intelligence, University of Colorado Anschutz School of Medicine - JRaviLab", 
   "Aurora, CO",
   ## bullets
-  c("Front and backend web devlopment for a protein analysis app (http://jravilab.org/molevolvr/?r=&p=home) [R + Slurm + batch scripts]", 
-    "Developed a full pipeline for training high accuracy machine learning models that collect, featurize, and train on public datasets to predict novel biological features (e.g., genes) that contribute to antibiotic resistance in the ESKAPE pathogenic organisms",
-    "Work closely with the Department of Biomedical Informatics software engineering team on web development, server on-boarding, installations, environment setup, and more",
-    "Hosted multiple workshops on Bash, Git, and ssh-workflow basics",
-    "Creating docker environments for projects/app",
-    "Assisted in migration of data, software, and our web-application from Michigan State University to Colorado University",
-    "Software used frequently: Github/Git, R (tidyverse, BioConductor suite, httr, Shiny, & much more), Python (Pandas, Numpy, Scikit-learn, Matplotlib, & more), Bash, Docker, various CLI tools, & many more"),
+  c("Developed a full prokaryotic pangenomics machine learning (ML) pipeline that collects data from bvbrc, annotates, and generates a pangenome of gene clusters serving as input for predictive anbitiotic resistance ML classifiers",
+    "Testing performance across various ML methods Random Forest, Support Vector Machine, and XGBoost on various pathogenic organisms (ESKAPE & more)",
+    "Front and backend web devlopment for a protein analysis app (http://jravilab.org/molevolvr/?r=&p=home) [R + Shiny + Slurm + batch scripts]",
+    "Hosted multiple workshops on Bash, Git, R package development, and ssh-workflow basics",
+    "Creating custom container environments (Docker & Singularity) for running projects on various machines",
+    "Software used frequently: Github/Git, slurm, PBS torque, R (tidyverse, Bioconductor suite, httr, Shiny, & much more), Python (Pandas, Numpy, Scikit-learn, Matplotlib, BioPython, requests, & more), Bash, Docker, notebook environments (Rmd, Jupyter, & Quarto), various CLI tools, & many more",
+    "Work closely with the Department of Biomedical Informatics software engineering team on web development, server on-boarding, installations, environment setup, and more"),
   ### Job 2
   "Student Research Assistant II",
   "2022",
   "Computational Mathematics Science and Engineering program, Michigan State University - Krishnan Lab & Malmstrom Lab", 
   "East Lansing, MI",
   ## bullets
-  c("Trained machine learning classifiers to predict plant virus' host types; also, trained models to predict plant virus taxonomy.", 
-    "Featurization and data wrangling with Pandas, Biopython, NumPy, and R packages for biological feature extraction",
+  c("Learned, presented on, and implemented statistical methods on viral protein datasets: fisher test, logistic regression, & principal component analysis",
+    "Trained machine learning classifiers to predict plant virus' host types; also, trained models to predict plant virus taxonomy.", 
+    "Featurization of protein sequences and data wrangling with Pandas, Biopython, NumPy, and R (Tidyverse + Bioconductor) packages for biological feature extraction",
     "Analyzing and visualizing model performance with Matplotlib/Seaborn & Scikit-learn performance metrics", 
     "Gave frequent presentations and updates to 3 co-PIs involved in project")
 ) %>%
@@ -68,8 +69,9 @@ tribble(
 ```{r presentations_and_posters}
 tribble(
   ~ Conference, ~ Year, ~ Title, ~ Where, ~ About,
-  "Great Lakes Bioinformatics Conference", 2023, "MolevolvR a web-app for protein characterization", "Montreal, CA", "Discussed the development and future directions of a web-app I develop: http://jravilab.org/molevolvr",
-  "Great Lakes Bioinformatics Conference", 2023, "How and when to build a web-app or R package?", "Montreal, CA", "Co-hosted a 4 hour in-person workshop on how to build an R package using automation: devtools and usethis. A github repo for a sample R package I wrote is located at http://www.github.com/jravilab/iprscanr. My section was 1 hour out of the total 4."
+  "Great Lakes Bioinformatics Conference", 2023, "MolevolvR a web-app for protein characterization", "McGill University, Montreal, CA", "Discussed the development and future directions of a web-app I develop: http://jravilab.org/molevolvr",
+  "Great Lakes Bioinformatics Conference", 2023, "How and when to build a web-app or R package?", "McGill Universtiy, Montreal, CA", "Co-hosted a 4 hour in-person workshop on how to build an R package using automation: devtools and usethis. A github repo for a sample R package I wrote is located at http://www.github.com/jravilab/iprscanr. My section was 1 hour out of the total 4.",
+  "Bioconductor", 2023, "MolevolvR a web-app for protein characterization", "Harvard University, Boston, MA", "Latest developments on protein analysis web application, MolEvovlR"
   ) %>% 
   detailed_entries(Conference, Year, Title, Where, About)
 ```
@@ -79,15 +81,16 @@ tribble(
 tribble(
   ~ What, ~ When, ~ With,
   # place first sentence in What field (do not include period)
-  "I program in R, Python, and Bash/shell on and off HPC to train 
-predictive machine learning models that leverage large, public biological datasets",
+  "I make and build upon bioinformatics tools using R, Python, and Bash/shell with basic familarity of other common languages like Javascript, C, Java, and Perl",
   "", # When (empty)
   # With (body of text)
-  "For instance, I've trained models that predict genes associated with antibiotic resistant in microbial pathogens and models that predict plant viruses' hosts.
+  "I've done a lot of data wrangling with large biological datasets on and off HPC environments. 
+  Primarily, I work with Omics data and use ML methods to bridge genotype features to phenotypic outcomes. 
+  I place high importance on knowing the underlying principles of statistical methods and how to use them effectively. 
   I've also been maintaining and upgrading a 
   protein analysis app (http://jravilab.org/molevolvr/?r=&p=home) built with the 
-  R shiny framework which uses a PBS Torque scheduler on the backend to handle job submissions.
-  Using Git, Docker, virtual environments, and pre-commit with linters, I try to ensure my code is reproducible and readable. 
+  R shiny framework which now uses a Slurm scheduler (previously PBS torque) on the backend to handle job submissions.
+  Using Git, Docker, virtual environments, and linters, I try to ensure my code is reproducible and readable. 
   I've been using Linux-based OSs for over 3 years, and through work I've 
   spent a good amount of time assisting undergrads and grad students in working 
   from the command line including multiple in-person and remote workshops."
