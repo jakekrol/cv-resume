@@ -8,7 +8,7 @@ github: jakekrol
 linkedin: jacob-krol-b3b784156
 date: "`r format(Sys.time(), '%B %Y')`"
 docname: "curriculum vitae"
-aboutme: "I enjoy solving relvant, challenging problems in science using computational approaches."
+aboutme: "I enjoy solving relevant, challenging problems in science using computational approaches."
 headcolor: "0F2137"
 output: 
   vitae::moderncv:
@@ -31,8 +31,8 @@ tribble(
   "Dept. of Biomedical Informatics, Center for Health Artificial Intelligence, University of Colorado Anschutz School of Medicine - JRaviLab", 
   "Aurora, CO",
   ## bullets
-  c("Developed a full prokaryotic pangenomics machine learning (ML) pipeline that collects data from bvbrc, annotates, and generates a pangenome of gene clusters serving as input for predictive anbitiotic resistance ML classifiers",
-    "Testing performance across various ML methods Random Forest, Support Vector Machine, and XGBoost on various pathogenic organisms (ESKAPE & more)",
+  c("Developed a full prokaryotic pangenomics machine learning (ML) pipeline that collects data from bvbrc, annotates genomes, and generates a pangenome of gene clusters serving as input for predictive anbitiotic resistance ML classifiers",
+    "Testing performance across various ML methods Random Forest, Support Vector Machine, and XGBoost across multiple pathogenic organisms (ESKAPE & more)",
     "Front and backend web devlopment for a protein analysis app (http://jravilab.org/molevolvr/?r=&p=home) [R + Shiny + Slurm + batch scripts]",
     "Hosted multiple workshops on Bash, Git, R package development, and ssh-workflow basics",
     "Creating custom container environments (Docker & Singularity) for running projects on various machines",
