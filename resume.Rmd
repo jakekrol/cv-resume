@@ -71,7 +71,7 @@ tribble(
 ```{r presentations_and_posters}
 tribble(
   ~ Conference, ~ Year, ~ Title, ~ Where, ~ About,
-  "Great Lakes Bioinformatics Conference", 2023, "MolevolvR a web-app for protein characterization", "McGill University, Montreal, CA", "Discussed the development and future directions of a web-app I develop: http://jravilab.org/molevolvr",
+  "Great Lakes Bioinformatics Conference", 2023, "MolEvolvR a web-app for protein characterization", "McGill University, Montreal, CA", "Discussed the development and future directions of a web-app I develop: http://jravilab.org/molevolvr",
   "Great Lakes Bioinformatics Conference", 2023, "How and when to build a web-app or R package?", "McGill Universtiy, Montreal, CA", "Co-hosted a 4 hour in-person workshop on how to build an R package using automation: devtools and usethis. A github repo for a sample R package I wrote is located at http://www.github.com/jravilab/iprscanr. My section was 1 hour out of the total 4.",
   "Bioconductor", 2023, "MolevolvR a web-app for protein characterization ", "Harvard University, Boston, MA", "Latest developments on protein analysis web application, MolEvovlR"
   ) %>% 
