@@ -59,12 +59,11 @@ tribble(
 # Education
 ```{r education}
 tribble(
-  ~ Degree, ~ Year, ~ Institution, ~ Where, ~ GPA, ~ Status,
-  "B.Sc Computational Neuroscience", "2020-2022", "Michigan State University", "East Lansing, Michigan", "GPA: 3.89/4.0", "Graduation Award: 'With Honor'",
-
-  "Math and Science Transfer Program", "2018-2020", "Washtenaw Community College", "Ann Arbor, MI", "GPA: 3.52/4.0", "Transferred"
+  ~ Degree, ~ Year, ~ Institution, ~ Where, ~ Bullets,
+  "B.Sc Computational Neuroscience", "2020-2022", "Michigan State University", "East Lansing, Michigan", c("GPA: 3.89/4.0", "Graduation Award: 'With Honor'", "Semester awards: Dean's List"),
+  "Math and Science Transfer Program", "2018-2020", "Washtenaw Community College", "Ann Arbor, MI", c("GPA: 3.52/4.0", "Semester awards: Honor Roll", "Transferred")
 ) %>% 
-  detailed_entries(Degree, Year, Institution, Where, c(GPA, Status))
+  detailed_entries(Degree, Year, Institution, Where, Bullets)
 ```
 
 # Presentations & posters
