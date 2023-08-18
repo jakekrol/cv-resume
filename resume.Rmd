@@ -79,14 +79,28 @@ tribble(
   ~ Conference, ~ Year, ~ Title, ~ Where, ~ About,
   "Great Lakes Bioinformatics Conference", 2023, "MolEvolvR a web-app for protein characterization", "McGill University, Montreal, CA", "Discussed the development and future directions of a web-app I develop: http://jravilab.org/molevolvr",
   "Great Lakes Bioinformatics Conference", 2023, "How and when to build a web-app or R package?", "McGill Universtiy, Montreal, CA", "Co-hosted a 4 hour in-person workshop on how to build an R package using automation: devtools and usethis. A github repo for a sample R package I wrote is located at http://www.github.com/jravilab/iprscanr. My section was 1 hour out of the total 4.",
-  "Bioconductor", 2023, "MolevolvR a web-app for protein characterization ", "Harvard University, Boston, MA", "Latest developments on protein analysis web application, MolEvovlR"
+  "Bioconductor", 2023, "MolevolvR a web-app for protein characterization ", "Boston University, Boston, MA", "Latest developments on protein analysis web application, MolEvovlR"
   ) %>% 
   detailed_entries(Conference, Year, Title, Where, About)
 ```
 
+# Professional Summary
+- Developed bioinformatics tools and worked on microbial/viral omics projects using R, Python, and Bash/shell with basic familiarity of other common languages like Javascript, C, Java, and Perl
+- Collected large datasets from public databases (e.g., BVBRC, NCBI, InterPro) and commonly transform them into machine learning formats
+- Extensive remote server work for my lab group's node which is part of the CU Alpine HPC cluster (i.e., the machine that host the web-application I develop). Some other experience with CU Alpine general research nodes and MSU's Compute HPC
+- Attended conferences (including international), hosted multiple programming/IT workshops, and presented on state-of-the-art research papers related to ML-omics research
+- Worked on a large protein analysis web-app code-base [MolEvolvR](http://jravilab.org/molevolvr/?r=&p=home) which includes multiple containers such as a custom-configured Slurm instance
+- Reproducability with containers, virtual environments, and version control
+- Readability with linters, documentation, and code reviews
+- Exceptional knowledge of POSIX command-line tools and commonly assist in system administrator tasks
+- Regularly implement and regularly self-study statistical methods; I also like to hosts journal clubs on papers that cover essential, relevant statistical topics like over/under-sampling methods, dimensionality reduction techniques, and classification models/performance-evaluation.
+- Assist in various sub-tasks throughout the lab such as one-on-one mentorship with undergraduates and graduate students
+
+\newpage
+
 # Keywords
 Python, R, machine learning (ML), High Performance Computing (HPC), 
-Bash, Vi/Nvim/VsCode/RStudio, Slurm, PBS Torque, Linux, ssh, 
+Bash, Vi/Vim/Nvim, VsCode, RStudio, Slurm, PBS Torque, Linux, ssh, 
 genomics, proteomics, domains, antibiotic resistance/drugs, pangenomics,  
 Git/Github, Docker, Singularity, web-development, Shiny, tidyverse, 
 tidymodels, Pandas, NumPy, Scikit-learn, Matplotlib, APIs, BVBRC, 
@@ -97,23 +111,6 @@ support vector machine (SVM), AUROC, AUPRC, fisher test,
 virtual environments, research, bioinformatics, computational biology, 
 LaTeX
 
-
-# Professional Summary
-I work on bioinformatics tools and omics projects using R, Python, and Bash/shell with basic familarity of other common languages like Javascript, C, Java, and Perl 
-I've done a lot of data wrangling with large biological datasets on and off HPC environments. 
-Primarily, I use ML methods to bridge genotypic features to phenotypic outcomes of pathogenic organisms and their hosts. 
-I place high importance on knowing the underlying principles of statistical methods and knowing when and how to use them effectively. 
-I've also been maintaining and upgrading a 
-protein analysis app (http://jravilab.org/molevolvr/?r=&p=home) built with the 
-R shiny framework which now uses a Slurm scheduler (previously PBS torque) on the backend to handle job submissions. 
-Using Git, Docker, virtual environments, and linters, I try to ensure my code is reproducible and readable. 
-I've been using Linux-based OSs for over 3 years, and through work I've 
-spent a good amount of time assisting undergrads and grad students in working 
-various programming metaskills through workshops: writing R/Py packages, 
-command-line/shell-scripting, virtual environments, containers, Git/Github, HPC, & ssh.
-
-\newpage
-
 # References
 ```{r references}
 tribble(
@@ -121,7 +118,7 @@ tribble(
   # Ref 1
   "Janani Ravi", "2022-2023", "University of Colorado Anschutz School of Medicine", "Aurora, CO", c("janani.ravi@cuanschutz.edu", "Principal investigator of JRaviLab"),
   # Ref 2
-  "Faisal Alquaddoomi", "2022-2023", "University of Colorado Anschutz Anschutz School of Medicine", "Aurora, CO", c("faisal.alquaddoomi@cuanschutz.edu", "Software engineer"),
+  "Faisal Alquaddoomi", "2022-2023", "University of Colorado Anschutz Anschutz School of Medicine", "Aurora, CO", c("faisal.alquaddoomi@cuanschutz.edu", "IT Principal Professional"),
   # Ref 3
   "Arjun Krishnan", "2022", "Michigan State University", "East Lansing, MI", c("arjun.krishnan@cuanschutz.edu", "Principal invesigator of Krishnan Lab")
 ) %>%
