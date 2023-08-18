@@ -89,11 +89,11 @@ tribble(
 - Collected large datasets from public databases (e.g., BVBRC, NCBI, InterPro) and commonly transform them into machine learning formats
 - Extensive remote server work for my lab group's node which is part of the CU Alpine HPC cluster (i.e., the machine that host the web-application I develop). Some other experience with CU Alpine general research nodes and MSU's Compute HPC
 - Attended conferences (including international), hosted multiple programming/IT workshops, and presented on state-of-the-art research papers related to ML-omics research
-- Worked on a large protein analysis web-app code-base [MolEvolvR](http://jravilab.org/molevolvr/?r=&p=home) which includes multiple containers such as a custom-configured Slurm instance
+- Worked on a protein analysis web-app with large code-base [MolEvolvR](http://jravilab.org/molevolvr/?r=&p=home) which includes multiple containers such as a custom-configured Slurm instance
 - Reproducability with containers, virtual environments, and version control
 - Readability with linters, documentation, and code reviews
 - Exceptional knowledge of POSIX command-line tools and commonly assist in system administrator tasks
-- Regularly implement and regularly self-study statistical methods; I also like to hosts journal clubs on papers that cover essential, relevant statistical topics like over/under-sampling methods, dimensionality reduction techniques, and classification models/performance-evaluation.
+- Regularly implement and self-study statistical methods; I also like to hosts journal clubs on papers that cover essential, relevant statistical topics like over/under-sampling methods, dimensionality reduction techniques, and classification models/performance-evaluation.
 - Assist in various sub-tasks throughout the lab such as one-on-one mentorship with undergraduates and graduate students
 
 \newpage
