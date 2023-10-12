@@ -36,15 +36,25 @@ tribble(
   "Dept. of Biomedical Informatics, Center for Health Artificial Intelligence, University of Colorado Anschutz School of Medicine - JRaviLab ", 
   "Aurora, CO",
   ## bullets
-  c("Developed a full prokaryotic pangenomics machine learning (ML) pipeline that collects data from BVBRC, annotates genomes, and generates a pangenome of gene clusters serving as input for predictive anbitiotic resistance ML classifiers",
-    "Evaluated performance across various ML methods Random Forest, Support Vector Machine, and XGBoost across multiple pathogenic organisms (ESKAPE & more)",
+  c("First author on preprint publication for a protein analysis app (http://jravilab.org/molevolvr/?r=&p=home); front and backend web development [R + Shiny + Slurm + batch scripts]",
+    "Developed a prokaryotic pangenomics machine learning (ML) pipeline for predicting anbitiotic resistance in bacterial strains (publication/pre-print coming soon)",
+    "Implemented various ML classifiers including Random Forest, Support Vector Machine, Logistic Regression, and XGBoost",
     "Used common classifier performance metrics and plots such as AUROC, AUPRC, and balanced accuracy",
-    "Front and backend web devlopment for a protein analysis app (http://jravilab.org/molevolvr/?r=&p=home) [R + Shiny + Slurm + batch scripts]",
+    "Analyzing feature across classes using fisher's test, evaluating hamming distance metrics, and unsupervised ML clustering",
     "Hosted multiple workshops on Bash, Git, R package development, and ssh-workflow basics",
     "Creating custom container environments (Docker & Singularity) for running projects on various machines",
     "Software used frequently: Github/Git, slurm, PBS torque, R (tidyverse, Bioconductor suite, httr, Shiny, & much more), Python (Pandas, Numpy, Scikit-learn, Matplotlib, BioPython, requests, & more), Bash, Docker, notebook environments (Rmd, Jupyter, & Quarto), various CLI tools, & many more",
     "Assisted in writing and generating figures for grant proposals and publications",
-    "Work closely with the Department of Biomedical Informatics software engineering team on web development, server on-boarding, installations, environment setup, and more"),
+    "Work closely with the Department of Biomedical Informatics software engineering team on web development, server on-boarding, installations, environment setup, and more",
+    "Assisted in software troubleshooting/guidance for other projects in lab"),
+) %>%
+    detailed_entries(Title, Date, Institution, Where, Bullets)
+
+```
+\newpage
+```{r professional experience 2}
+tribble(
+  ~ Title, ~ Date, ~ Institution, ~ Where, ~ Bullets,
   ### Job 2
   "Student Research Assistant II",
   "2022",
@@ -54,19 +64,24 @@ tribble(
   c("Learned, presented on, and implemented statistical methods on viral protein datasets: fisher test, logistic regression, & principal component analysis",
     "Trained machine learning classifiers to predict plant virus' host types; also, trained models to predict plant virus taxonomy.", 
     "Featurization of protein sequences and data wrangling with Pandas, Biopython, NumPy, and R (Tidyverse + Bioconductor) packages for biological feature extraction",
-    "Analyzing and visualizing model performance with Matplotlib/Seaborn & Scikit-learn performance metrics", 
-    "Gave frequent presentations and updates to 3 co-PIs involved in project")
+    "Further preparing data with one-hot-encoding and z-score normalization",
+    "Analyzing and visualizing model performance with Matplotlib/Seaborn & Scikit-learn performance metrics")
 ) %>%
     detailed_entries(Title, Date, Institution, Where, Bullets)
-
 ```
 
-\newpage
+# Publications
+MolEvolvR: A web-app for characterizing proteins using molecular evolution and phylogeny
+
+**Jacob D Krol**\*, Joseph T Burke\*, Samuel Z Chen\*, Lo M Sosinski\*, Faisal S Alquaddoomi, Evan P Brenner, Ethan P Wolfe, Vincent P Rubinetti, Shaddai Amolitos, Kellen M Reason, John B Johnston, Janani Ravi
+
+bioRxiv 2022.02.18.461833; doi: https://doi.org/10.1101/2022.02.18.461833 (\* indicates co-primary author)
 
 # Education
 ```{r education}
 tribble(
   ~ Degree, ~ Year, ~ Institution, ~ Where, ~ Bullets,
+  "Non-degree seeking", "2023", "Colorado University Anschutz School of Medicine", "in-progress", "Taking BIOS 7747 (Machine Learning for Biomedical Applications) course using employee tuition benefits ",
   "B.Sc Computational Neuroscience", "2020-2022", "Michigan State University", "East Lansing, Michigan", c("GPA: 3.89/4.0", "Graduation Award: 'With Honor'", "Semester awards: Dean's List"),
   "Math and Science Transfer Program", "2018-2020", "Washtenaw Community College", "Ann Arbor, MI", c("GPA: 3.52/4.0", "Semester awards: Honor Roll", "Transferred")
 ) %>% 
@@ -78,29 +93,28 @@ tribble(
 tribble(
   ~ Conference, ~ Year, ~ Title, ~ Where, ~ About,
   "Great Lakes Bioinformatics Conference", 2023, "MolEvolvR a web-app for protein characterization", "McGill University, Montreal, CA", "Discussed the development and future directions of a web-app I develop: http://jravilab.org/molevolvr",
-  "Great Lakes Bioinformatics Conference", 2023, "How and when to build a web-app or R package?", "McGill Universtiy, Montreal, CA", "Co-hosted a 4 hour in-person workshop on how to build an R package using automation: devtools and usethis. A github repo for a sample R package I wrote is located at http://www.github.com/jravilab/iprscanr. My section was 1 hour out of the total 4.",
-  "Bioconductor", 2023, "MolevolvR a web-app for protein characterization ", "Boston University, Boston, MA", "Latest developments on protein analysis web application, MolEvovlR"
+  "Great Lakes Bioinformatics Conference", 2023, "How and when to build a web-app or R package?", "McGill Universtiy, Montreal, CA", "Hosted a 4 hour in-person workshop on how to build an R package using automation: devtools and usethis. A github repo for a sample R package I wrote is located at http://www.github.com/jravilab/iprscanr.",
+  "Bioconductor", 2023, "MolevolvR a web-app for protein characterization ", "Boston University, Boston, MA", "Presented on MolEvolvR application methodology for the Cancer and Evolution talks section"
   ) %>% 
   detailed_entries(Conference, Year, Title, Where, About)
 ```
-
+\newpage
 # Professional Summary
 - Developed bioinformatics tools and worked on microbial/viral omics projects using R, Python, and Bash/shell with basic familiarity of other common languages like Javascript, C, Java, and Perl
-- Collected large datasets from public databases (e.g., BVBRC, NCBI, InterPro) and commonly transform them into machine learning formats
-- Extensive remote server work for my lab group's node which is part of the CU Alpine HPC cluster (i.e., the machine that host the web-application I develop). Some other experience with CU Alpine general research nodes and MSU's Compute HPC
-- Attended conferences (including international), hosted multiple programming/IT workshops, and presented on state-of-the-art research papers related to ML-omics research
-- Worked on a protein analysis web-app with large code-base [MolEvolvR](http://jravilab.org/molevolvr/?r=&p=home) which includes multiple containers such as a custom-configured Slurm instance
-- Reproducability with containers, virtual environments, and version control
-- Readability with linters, documentation, and code reviews
-- Exceptional knowledge of POSIX command-line tools and commonly assist in system administrator tasks
+- Use large, public databases (e.g., BVBRC, NCBI, InterPro) with applied machine learning to study the relationship between viral/bacterial genotypes and phenotypes
+- Extensive remote server work on our lab webserver, CU Alpine HPC cluster, and MSU's Compute HPC
+- Attended international conferences for workshops and presentations, hosted department programming workshops
+- Developed a protein analysis web-app [MolEvolvR](http://jravilab.org/molevolvr/?r=&p=home)
+- Practiced code reproducability with containers, virtual environments, and version control
+- Practiced code readability with linters, documentation, and code reviews
+- Exceptional knowledge of POSIX command-line tools and commonly assist in system administrator tasks on my lab's webserver
+- Applied various statistical methods to analyze omics data such as supervised classification, unsupervised clustering, fisher's test, principle component analysis, ROSE oversampling, etc.
 - Regularly implement and self-study statistical methods; I also like to hosts journal clubs on papers that cover essential, relevant statistical topics like over/under-sampling methods, dimensionality reduction techniques, and classification models/performance-evaluation.
 - Assist in various sub-tasks throughout the lab such as one-on-one mentorship with undergraduates and graduate students
 
-\newpage
-
 # Keywords
 Python, R, machine learning (ML), High Performance Computing (HPC), 
-Bash, Vi/Vim/Nvim, VsCode, RStudio, Slurm, PBS Torque, Linux, ssh, 
+Bash, Vi/Vim/Nvim, VsCode, RStudio, SLURM, PBS Torque, Linux, ssh, 
 genomics, proteomics, domains, antibiotic resistance/drugs, pangenomics,  
 Git/Github, Docker, Singularity, web-development, Shiny, tidyverse, 
 tidymodels, Pandas, NumPy, Scikit-learn, Matplotlib, APIs, BVBRC, 
