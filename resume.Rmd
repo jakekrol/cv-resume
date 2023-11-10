@@ -30,9 +30,9 @@ library(shiny)
 ```{r education}
 tribble(
   ~ Degree, ~ Year, ~ Institution, ~ Where, ~ Bullets,
-  "Non-degree seeking", "2023", "Colorado University Anschutz School of Medicine", "in-progress", "Taking BIOS 7747 (Machine Learning for Biomedical Applications) course using employee tuition benefits ",
-  "B.Sc Computational Neuroscience", "2020-2022", "Michigan State University", "East Lansing, Michigan", c("GPA: 3.89/4.0", "Graduation Award: 'With Honor'", "Semester awards: Dean's List"),
-  "Math and Science Transfer Program", "2018-2020", "Washtenaw Community College", "Ann Arbor, MI", c("GPA: 3.52/4.0", "Semester awards: Honor Roll", "Transferred")
+  "Non-degree seeking", "Fall 2023", "University of Colorado Anschutz Medical Campus","Aurora, CO","BIOS 7747: Machine Learning for Biomedical Applications, graduate course offered by the University of Colorado School of Public Health",
+  "B.Sc. in Computational Neuroscience", "2020-2022", "Michigan State University ", "East Lansing, MI", c("GPA: 3.89/4.0", "Graduated 'With Honor' (top 7-20%)", "Semester awards: Dean's List"),
+  "Math and Science Transfer Program", "2018-2020", "Washtenaw Community College ", "Ann Arbor, MI", c("GPA: 3.52/4.0", "Semester awards: Honor Roll", "Transferred")
 ) %>% 
   detailed_entries(Degree, Year, Institution, Where, Bullets)
 ```
@@ -45,7 +45,7 @@ MolEvolvR: A web-app for characterizing proteins using molecular evolution and p
 bioRxiv 2022.02.18.461833; doi: https://doi.org/10.1101/2022.02.18.461833 (\* indicates co-primary author)
 \newline
 \newline
-(**In-progress**) **Jacob D Krol**, Ethan P Wolfe, Evan P Brenner, Keenan Manpearl, Vignesh Sridhar, Joe Burke, Jill Bilodeoux, Janani Ravi Accurately predicting AR in ESKAPE pathogens using ML. 
+**Jacob D Krol**, Ethan P Wolfe, Evan P Brenner, Keenan Manpearl, Vignesh Sridhar, Joe Burke, Jill Bilodeoux, Janani Ravi Accurately predicting AR in ESKAPE pathogens using ML (*In preparation.*). 
 
 # Presentations & posters
 ```{r presentations_and_posters}
