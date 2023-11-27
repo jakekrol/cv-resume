@@ -4,6 +4,7 @@ surname: Krol
 position: "Computational Biologist/Professional RA"
 github: jakekrol
 linkedin: "jacob-krol-b3b784156"
+webpage: https://jravilab.github.io/authors/jacob-d-krol
 date: "`r format(Sys.time(), '%B %Y')`"
 docname: "curriculum vitae"
 headcolor: "0F2137"
@@ -31,21 +32,23 @@ library(shiny)
 tribble(
   ~ Degree, ~ Year, ~ Institution, ~ Where, ~ Bullets,
   "Non-degree seeking", "Fall 2023", "University of Colorado Anschutz Medical Campus","Aurora, CO","BIOS 7747: Machine Learning for Biomedical Applications, graduate course offered by the University of Colorado School of Public Health",
-  "B.Sc. in Computational Neuroscience", "2020-2022", "Michigan State University ", "East Lansing, MI", c("GPA: 3.89/4.0", "Graduated 'With Honor' (top 7-20%)", "Semester awards: Dean's List"),
+  "B.Sc. in Computational Neuroscience", "2020-2022", "Michigan State University ", "East Lansing, MI", c("GPA: 3.89/4.0", "Graduated 'With Honor'", "Semester awards: Dean's List"),
   "Math and Science Transfer Program", "2018-2020", "Washtenaw Community College ", "Ann Arbor, MI", c("GPA: 3.52/4.0", "Semester awards: Honor Roll", "Transferred")
 ) %>% 
   detailed_entries(Degree, Year, Institution, Where, Bullets)
 ```
 
 # Publications
-MolEvolvR: A web-app for characterizing proteins using molecular evolution and phylogeny
+MolEvolvR: A web-app for characterizing proteins using molecular evolution and phylogeny.
 
 **Jacob D Krol**\*, Joseph T Burke\*, Samuel Z Chen\*, Lo M Sosinski\*, Faisal S Alquaddoomi, Evan P Brenner, Ethan P Wolfe, Vincent P Rubinetti, Shaddai Amolitos, Kellen M Reason, John B Johnston, Janani Ravi
 
-bioRxiv 2022.02.18.461833; doi: https://doi.org/10.1101/2022.02.18.461833 (\* indicates co-primary author)
+bioRxiv 2022.02.18.461833; doi: https://doi.org/10.1101/2022.02.18.461833 (\* co-primary author)
 \newline
 \newline
-**Jacob D Krol**, Ethan P Wolfe, Evan P Brenner, Keenan Manpearl, Vignesh Sridhar, Joe Burke, Jill Bilodeoux, Janani Ravi Accurately predicting AR in ESKAPE pathogens using ML (*In preparation.*). 
+Accurately predicting AR in ESKAPE pathogens using ML.
+**Jacob D Krol**, Ethan P Wolfe, Evan P Brenner, Keenan Manpearl, Vignesh Sridhar, Joe Burke, Jill Bilodeoux, Janani Ravi
+(*In preparation.*). 
 
 # Presentations & posters
 ```{r presentations_and_posters}
@@ -53,8 +56,8 @@ tribble(
   ~ Conference, ~ Year, ~ Title, ~ Where, ~ About,
   "Great Lakes Bioinformatics Conference", 2023, "MolEvolvR a web-app for protein characterization", "McGill University, Montreal, CA", "Discussed the development and future directions of a web-app I develop: http://jravilab.org/molevolvr",
   "Great Lakes Bioinformatics Conference", 2023, "How and when to build a web-app or R package?", "McGill Universtiy, Montreal, CA", "Hosted a 4 hour in-person workshop on how to build an R package using automation: devtools and usethis. A github repo for a sample R package I wrote is located at http://www.github.com/jravilab/iprscanr.",
-  "Bioconductor", 2023, "MolevolvR a web-app for protein characterization ", "Boston University, Boston, MA", "Presented on MolEvolvR application methodology for the Cancer and Evolution talks section",
-  "DBMI Retreat", 2023, "Robust machine learning-based classification of antimicrobial resistance in high-impact pathogens", "CU Anschutz, Aurora, CO", "Presented on highly performant AMR ML classifcation models"
+  "R/Bioconductor", 2023, "MolevolvR a web-app for protein characterization ", "Boston University, Boston, MA", "Presented on MolEvolvR application methodology for the Cancer and Evolution talks section",
+  "CU DBMI Retreat", 2023, "Robust machine learning-based classification of antimicrobial resistance in high-impact pathogens", "CU Anschutz, Aurora, CO", "Presented on highly performant AMR ML classifcation models"
   ) %>% 
   detailed_entries(Conference, Year, Title, Where, About)
 ```
@@ -64,8 +67,8 @@ tribble(
 # Funding
 
 - Submitted Fall 2023 NSF GRFP (in-review)
-- Contributed to minor revisions U01 grant submission (awarded)
-- Contributed revision and figures to R01 grant submission (in-review)
+- Contributed to minor revisions NIH NIAID U01 grant submission (awarded; PI: Janani Ravi)
+- Contributed revision and figures to NIH NIAID R01 grant submission (in-review; PI: Janani Ravi)
 - Submitting Winter 2023 Department of Energy Computational Science Graduate Fellowship (in-preparation)
 
 # Professional Experience
@@ -78,14 +81,14 @@ tribble(
   "Dept. of Biomedical Informatics, Center for Health Artificial Intelligence, University of Colorado Anschutz School of Medicine - JRaviLab ", 
   "Aurora, CO",
   ## bullets
-  c("First author publication (https://doi.org/10.1101/2022.02.18.461833) for front and backend web development for a protein analysis app (http://jravilab.org/molevolvr/?r=&p=home)",
-    "Developed a machine learning (ML) pipeline for classifying antimicrobial resistance (AMR) in bacterial strains (publication in-prep for 2024 submission)",
-    "Listed in 'Acknowledgements' section of publication *provisionally accepted* at *mSystems (https://doi.org/10.1101/2020.09.24.301986)",
+  c("Redesigned the front and backend of MolEvolvR, a web app for protein charancterization (http://jravilab.org/molevolvr; Krol, et al., 2023 _bioRxiv_; [DOI](https://doi.org/10.1101/2022.02.18.461833))",
+    "Developed a machine learning (ML) pipeline for classifying antimicrobial resistance (AMR) in bacterial strains (publication in-prep for early 2024 submission)",
+    "Listed in 'Acknowledgements' section of publication *provisionally accepted* at *mSystems ([DOI](https://doi.org/10.1101/2020.09.24.301986))",
     "Presented research talks and gave programming workshops at 2 international conferences (Bioconductor 2023 and GLBIO 2023)",
     "Mentored 3 PhD students and 1 undergraduate student",
     "Developing two R packages for AMR project (source code for Bioconductor and data for ExperimentHub)",
     "Used University of Colorado Anschutz School of Medicine (CU Anschutz) Alpine high performance computing cluster (HPC) to aggregate, transform, and train ML models on over 100GB of omics data",
-    "Containerization of both primary projects to allow rapid testing and portability across machines",
+    "Created docker containers for both primary projects to allow rapid testing and portability across machines",
     "Resolved over 50 GitHub issues for multiple lab repositories and signficantly cleaned up consolidated projects with multiple repositories",
     "Mentored by members of CU Anschutz Department of Biomedical Informatics (DBMI) software engineering team",
     "Assisted in hiring process (interviewing and feedback) for various lab positions: post-doctoral and research assistants",
@@ -119,7 +122,7 @@ tribble(
 
 # Professional Summary
 - Develop bioinformatics tools specializing in applying ML to large omics datasets using R, Python, and Bash/shell
-- Use large, public databases (e.g., BVBRC, NCBI, InterPro) with applied machine learning to study the relationship between genotypes and phenotypes
+- Use large, public databases (e.g., BV-BRC, NCBI, InterPro) with applied machine learning to study the relationship between genotypes and phenotypes
 - Mentored 3 PhD students and 1 undergraduate student
 - Developed a protein analysis web-app [MolEvolvR](http://jravilab.org/molevolvr/?r=&p=home)
 - Presented research talks and workshops at international conferences, hosted department-wide workshops, and presented research posters
@@ -128,12 +131,12 @@ tribble(
 - Apply statistical methods to analyze omics data: supervised classification, fisher's test, under/over-sampling, cross-validation, rank-based hypothesis testing, etc
 - Assist in various sub-tasks throughout the lab such as one-on-one mentorship with undergraduates and graduate students
 
-# Mentees
+# Peer-Mentees
 
 **PhD Students**
 
 - Keenan Manpearl; 2023 (Computational Biosciences program; CU Anschutz)
-- Jill Bilodeaux; 2023 (Computational Biosciences program; CU Anschutz; 2023)
+- Jill Bilodeaux; 2023 (Computational Biosciences program; CU Anschutz)
 - Charmie Vang; 2023 (Biophysical Sciences program; CU Anschutz)
 
 **Undergraduates**
@@ -162,7 +165,7 @@ tribble(
 
 <!-- # Keywords -->
 <!-- Python, R, machine learning (ML), High Performance Computing (HPC),  -->
-<!-- Bash, Vi/Vim/Nvim, VsCode, RStudio, SLURM, PBS Torque, Linux, ssh,  -->
+<!-- Bash, Vi/Vim/Nvim, VSCode, RStudio, SLURM, PBS Torque, Linux, ssh,  -->
 <!-- genomics, proteomics, domains, antibiotic resistance/drugs, pangenomics,   -->
 <!-- Git/Github, Docker, Singularity, web-development, Shiny, tidyverse,  -->
 <!-- tidymodels, Pandas, NumPy, Scikit-learn, Matplotlib, APIs, BVBRC,  -->
@@ -178,11 +181,11 @@ tribble(
 tribble(
   ~ Who, ~ When, ~ With, ~ Where, ~ Bullets,
   # Ref 1
-  "Janani Ravi", "2022-2023", "University of Colorado Anschutz School of Medicine", "Aurora, CO", c("janani.ravi@cuanschutz.edu", "Principal investigator of JRaviLab"),
+  "Janani Ravi", "2022-Present", "University of Colorado Anschutz School of Medicine", "Aurora, CO", c("janani.ravi@cuanschutz.edu", "Assistant Professor, Principal investigator of JRaviLab"),
   # Ref 2
-  "Faisal Alquaddoomi", "2022-2023", "University of Colorado Anschutz Anschutz School of Medicine", "Aurora, CO", c("faisal.alquaddoomi@cuanschutz.edu", "IT Principal Professional"),
+  "Faisal Alquaddoomi", "2022-Present", "University of Colorado Anschutz Anschutz School of Medicine", "Aurora, CO", c("faisal.alquaddoomi@cuanschutz.edu", "IT Principal Professional"),
   # Ref 3
-  "Arjun Krishnan", "2022", "Michigan State University", "East Lansing, MI", c("arjun.krishnan@cuanschutz.edu", "Principal invesigator of Krishnan Lab")
+  "Arjun Krishnan", "2022", "Michigan State University", "East Lansing, MI", c("arjun.krishnan@cuanschutz.edu", "Associate Professor, Principal invesigator of Krishnan Lab")
 ) %>%
   detailed_entries(Who, When, With, Where, Bullets)
 ```
