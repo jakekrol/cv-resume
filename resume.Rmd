@@ -53,18 +53,20 @@ tribble(
   ~ Conference, ~ Year, ~ Title, ~ Where, ~ About,
   "Great Lakes Bioinformatics Conference", 2023, "MolEvolvR a web-app for protein characterization", "McGill University, Montreal, CA", "Discussed the development and future directions of a web-app I develop: http://jravilab.org/molevolvr",
   "Great Lakes Bioinformatics Conference", 2023, "How and when to build a web-app or R package?", "McGill Universtiy, Montreal, CA", "Hosted a 4 hour in-person workshop on how to build an R package using automation: devtools and usethis. A github repo for a sample R package I wrote is located at http://www.github.com/jravilab/iprscanr.",
-  "Bioconductor", 2023, "MolevolvR a web-app for protein characterization ", "Boston University, Boston, MA", "Presented on MolEvolvR application methodology for the Cancer and Evolution talks section"
+  "Bioconductor", 2023, "MolevolvR a web-app for protein characterization ", "Boston University, Boston, MA", "Presented on MolEvolvR application methodology for the Cancer and Evolution talks section",
+  "DBMI Retreat", 2023, "Robust machine learning-based classification of antimicrobial resistance in high-impact pathogens", "CU Anschutz, Aurora, CO", "Presented on highly performant AMR ML classifcation models"
   ) %>% 
   detailed_entries(Conference, Year, Title, Where, About)
 ```
 
 \newpage
 
-# Grants and Funding
+# Funding
 
-- Applied for Fall 2023 NSF GRFP (in-review)
+- Submitted Fall 2023 NSF GRFP (in-review)
 - Contributed to minor revisions U01 grant submission (awarded)
 - Contributed revision and figures to R01 grant submission (in-review)
+- Submitting Winter 2023 Department of Energy Computational Science Graduate Fellowship (in-preparation)
 
 # Professional Experience
 ```{r professional_experience}
@@ -76,17 +78,21 @@ tribble(
   "Dept. of Biomedical Informatics, Center for Health Artificial Intelligence, University of Colorado Anschutz School of Medicine - JRaviLab ", 
   "Aurora, CO",
   ## bullets
-  c("First author on preprint publication for a protein analysis app (http://jravilab.org/molevolvr/?r=&p=home); front and backend web development [R + Shiny + Slurm + batch scripts]",
-    "Developed a prokaryotic pangenomics machine learning (ML) pipeline for predicting anbitiotic resistance in bacterial strains (publication/pre-print coming soon)",
-    "Implemented various ML classifiers including Random Forest, Support Vector Machine, Logistic Regression, and XGBoost",
-    "Used common classifier performance metrics and plots such as AUROC, AUPRC, and balanced accuracy",
-    "Analyzing feature across classes using fisher's test, evaluating hamming distance metrics, and unsupervised ML clustering",
-    "Hosted multiple workshops on Bash, Git, R package development, and ssh-workflow basics",
-    "Creating custom container environments (Docker & Singularity) for running projects on various machines",
-    "Software used frequently: Github/Git, slurm, PBS torque, R (tidyverse, Bioconductor suite, httr, Shiny, & much more), Python (Pandas, Numpy, Scikit-learn, Matplotlib, BioPython, requests, & more), Bash, Docker, notebook environments (Rmd, Jupyter, & Quarto), various CLI tools, & many more",
-    "Assisted in writing and generating figures for grant proposals and publications",
-    "Work closely with the Department of Biomedical Informatics software engineering team on web development, server on-boarding, installations, environment setup, and more",
-    "Assisted in software troubleshooting/guidance for other projects in lab"),
+  c("First author publication (https://doi.org/10.1101/2022.02.18.461833) for front and backend web development for a protein analysis app (http://jravilab.org/molevolvr/?r=&p=home)",
+    "Developed a machine learning (ML) pipeline for classifying antimicrobial resistance (AMR) in bacterial strains (publication in-prep for 2024 submission)",
+    "Listed in 'Acknowledgements' section of publication *provisionally accepted* at *mSystems (https://doi.org/10.1101/2020.09.24.301986)",
+    "Presented research talks and gave programming workshops at 2 international conferences (Bioconductor 2023 and GLBIO 2023)",
+    "Mentored 3 PhD students and 1 undergraduate student",
+    "Developing two R packages for AMR project (source code for Bioconductor and data for ExperimentHub)",
+    "Used University of Colorado Anschutz School of Medicine (CU Anschutz) Alpine high performance computing cluster (HPC) to aggregate, transform, and train ML models on over 100GB of omics data",
+    "Containerization of both primary projects to allow rapid testing and portability across machines",
+    "Resolved over 50 GitHub issues for multiple lab repositories and signficantly cleaned up consolidated projects with multiple repositories",
+    "Mentored by members of CU Anschutz Department of Biomedical Informatics (DBMI) software engineering team",
+    "Assisted in hiring process (interviewing and feedback) for various lab positions: post-doctoral and research assistants",
+    "Implemented various ML approaches and evaluation techniques: logistic regression, gradient boosting machines, random forests, linear discriminant analysis, stratified-cross-validation, class-weighting, hyperparamter searching, and evaluating auROC, balanced accuracy, etc., on hold-out dataset",
+    "Hosted deparment wide workshops on Bash, Git, R package development, and ssh-workflow basics",
+    "Assisted in writing and generating figures for lab grant proposals and publications",
+    "Performed system administrator duties (e.g., server onboarding, dependency/user/data/resource management) for our lab's webserver")
 ) %>%
     detailed_entries(Title, Date, Institution, Where, Bullets)
 
@@ -112,30 +118,60 @@ tribble(
 
 
 # Professional Summary
-- Developed bioinformatics tools and worked on microbial/viral omics projects using R, Python, and Bash/shell with basic familiarity of other common languages like Javascript, C, Java, and Perl
-- Use large, public databases (e.g., BVBRC, NCBI, InterPro) with applied machine learning to study the relationship between viral/bacterial genotypes and phenotypes
-- Extensive remote server work on our lab webserver, CU Alpine HPC cluster, and MSU's Compute HPC
-- Attended international conferences for workshops and presentations, hosted department programming workshops
+- Develop bioinformatics tools specializing in applying ML to large omics datasets using R, Python, and Bash/shell
+- Use large, public databases (e.g., BVBRC, NCBI, InterPro) with applied machine learning to study the relationship between genotypes and phenotypes
+- Mentored 3 PhD students and 1 undergraduate student
 - Developed a protein analysis web-app [MolEvolvR](http://jravilab.org/molevolvr/?r=&p=home)
-- Practiced code reproducability with containers, virtual environments, and version control
-- Practiced code readability with linters, documentation, and code reviews
-- Exceptional knowledge of POSIX command-line tools and commonly assist in system administrator tasks on my lab's webserver
-- Applied various statistical methods to analyze omics data such as supervised classification, unsupervised clustering, fisher's test, principle component analysis, ROSE oversampling, etc.
-- Regularly implement and self-study statistical methods; I also like to hosts journal clubs on papers that cover essential, relevant statistical topics like over/under-sampling methods, dimensionality reduction techniques, and classification models/performance-evaluation.
+- Presented research talks and workshops at international conferences, hosted department-wide workshops, and presented research posters
+- Exceptional IT knowledge: experienced with high performance computing (HPC), version control (GitHub), dependency management, containerization, package development, web-application hosting, using web APIs for data, etc.
+- Basic familiarity of other common languages like Javascript, C, Java, and Perl
+- Apply statistical methods to analyze omics data: supervised classification, fisher's test, under/over-sampling, cross-validation, rank-based hypothesis testing, etc
 - Assist in various sub-tasks throughout the lab such as one-on-one mentorship with undergraduates and graduate students
 
-# Keywords
-Python, R, machine learning (ML), High Performance Computing (HPC), 
-Bash, Vi/Vim/Nvim, VsCode, RStudio, SLURM, PBS Torque, Linux, ssh, 
-genomics, proteomics, domains, antibiotic resistance/drugs, pangenomics,  
-Git/Github, Docker, Singularity, web-development, Shiny, tidyverse, 
-tidymodels, Pandas, NumPy, Scikit-learn, Matplotlib, APIs, BVBRC, 
-bacteria, host, pathogens, phylogeny, evolution, statistical methods, 
-principal component analysis (PCA), single value decomposition (SVD), 
-logistic regression (LR), random forest (RF), XGboost, 
-support vector machine (SVM), AUROC, AUPRC, fisher test, 
-virtual environments, research, bioinformatics, computational biology, 
-LaTeX
+# Mentees
+
+**PhD Students**
+
+- Keenan Manpearl; 2023 (Computational Biosciences program; CU Anschutz)
+- Jill Bilodeaux; 2023 (Computational Biosciences program; CU Anschutz; 2023)
+- Charmie Vang; 2023 (Biophysical Sciences program; CU Anschutz)
+
+**Undergraduates**
+
+- Ethan Wolfe; 2023 (Biochemistry & Molecular Biology (BS) with CMSE and additional minors)
+
+# Project summaries
+
+**Machine learning classification of Antimicrobial Resistance**: Classification antibiotic resistance of bacterial strains using supervised learning
+
+- Project lead, first author
+- Developed a computational pipeline to gather bacterial genomes and AMR data from public databases, featurize the genomes, develop ML models to classify AMR, and analyze model features to discover novel AMR genes
+- Mentored 3 PhD students and 1 undergraduate to assist in data curation, model development, and model outcome analysis
+- Supervised learning with large (over 10k bacterial isolates) sample sizes and tackling class imbalance with weighted loss functions and undersampling
+- Model evaluation using confusion matrix performance metrics such as balanced accuracy, auROC, etc.
+- Implemented Fisher's Exact test for nearly a million genes to determine significant presence/absence in the binary classes (resistant/susceptible phenotypes) yielding ranked gene lists for AMR contribution
+- Developed the data curation, ML, and non-ML pipelines as Bioconductor R package with planned submission in early 2024
+\newline
+\newline
+  - All source code for data wrangling, machine learning, and presentation is already installable as an R package on https://github.com/jravilab/amR (private until submission)
+- Planned submission for datasets and results to Bioconductor's ExperimentHub in early 2024
+- Future directions:
+  - Build a sequence database of top resistance genes by clustering across species to address the uninterprebility of gene cluster assignment across species using species-wise pangenomics tools
+  - Design a web-application to showcase results of ML models in classifying AMR for various drugs/species
+  - Design a web-application which allows submission of bacterial genomes for AMR classification
+
+<!-- # Keywords -->
+<!-- Python, R, machine learning (ML), High Performance Computing (HPC),  -->
+<!-- Bash, Vi/Vim/Nvim, VsCode, RStudio, SLURM, PBS Torque, Linux, ssh,  -->
+<!-- genomics, proteomics, domains, antibiotic resistance/drugs, pangenomics,   -->
+<!-- Git/Github, Docker, Singularity, web-development, Shiny, tidyverse,  -->
+<!-- tidymodels, Pandas, NumPy, Scikit-learn, Matplotlib, APIs, BVBRC,  -->
+<!-- bacteria, host, pathogens, phylogeny, evolution, statistical methods,  -->
+<!-- principal component analysis (PCA), single value decomposition (SVD),  -->
+<!-- logistic regression (LR), random forest (RF), XGboost,  -->
+<!-- support vector machine (SVM), AUROC, AUPRC, fisher test,  -->
+<!-- virtual environments, research, bioinformatics, computational biology,  -->
+<!-- LaTeX -->
 
 # References
 ```{r references}
