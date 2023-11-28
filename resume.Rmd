@@ -85,10 +85,10 @@ tribble(
     "Developed a machine learning (ML) pipeline for classifying antimicrobial resistance (AMR) in bacterial strains (publication in-prep for early 2024 submission)",
     "Listed in 'Acknowledgements' section of publication *provisionally accepted* at *mSystems ([DOI](https://doi.org/10.1101/2020.09.24.301986))",
     "Presented research talks and gave programming workshops at 2 international conferences (Bioconductor 2023 and GLBIO 2023)",
-    "Mentored 3 PhD students and 1 undergraduate student",
+    "Mentored 3 PhD students and 1 undergraduate to assist in omics data featurization, model development, and model outcome analysis",
     "Developing two R packages for AMR project (source code for Bioconductor and data for ExperimentHub)",
     "Used University of Colorado Anschutz School of Medicine (CU Anschutz) Alpine high performance computing cluster (HPC) to aggregate, transform, and train ML models on over 100GB of omics data",
-    "Created docker containers for both primary projects to allow rapid testing and portability across machines",
+    "Containerization of AMR data collection code and the R packages I developed, and worked with Faisal Alquaddoomi on containerizing the front-end, back-end, and slurm instance for the MolEvolvR web-application",
     "Resolved over 50 GitHub issues for multiple lab repositories and signficantly cleaned up consolidated projects with multiple repositories",
     "Mentored by members of CU Anschutz Department of Biomedical Informatics (DBMI) software engineering team",
     "Assisted in hiring process (interviewing and feedback) for various lab positions: post-doctoral and research assistants",
@@ -149,11 +149,11 @@ tribble(
 
 - Project lead, first author
 - Developed a computational pipeline to gather bacterial genomes and AMR data from public databases, featurize the genomes, develop ML models to classify AMR, and analyze model features to discover novel AMR genes
-- Mentored 3 PhD students and 1 undergraduate to assist in data curation, model development, and model outcome analysis
+- Mentored 3 PhD students and 1 undergraduate to assist in omics data featurization, model development, and model outcome analysis
 - Supervised learning with large (over 10k bacterial isolates) sample sizes and tackling class imbalance with weighted loss functions and undersampling
 - Model evaluation using confusion matrix performance metrics such as balanced accuracy, auROC, etc.
 - Implemented Fisher's Exact test for nearly a million genes to determine significant presence/absence in the binary classes (resistant/susceptible phenotypes) yielding ranked gene lists for AMR contribution
-- Developed the data curation, ML, and non-ML pipelines as Bioconductor R package with planned submission in early 2024
+- Developed the omics data featurization, ML, and non-ML pipelines as Bioconductor R package with planned submission in early 2024
 \newline
 \newline
   - All source code for data wrangling, machine learning, and presentation is already installable as an R package on https://github.com/jravilab/amR (private until submission)
