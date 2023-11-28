@@ -81,7 +81,7 @@ tribble(
   "Dept. of Biomedical Informatics, Center for Health Artificial Intelligence, University of Colorado Anschutz School of Medicine - JRaviLab ", 
   "Aurora, CO",
   ## bullets
-  c("Redesigned the front and backend of MolEvolvR, a web app for protein charancterization (http://jravilab.org/molevolvr; Krol, et al., 2023 _bioRxiv_; [DOI](https://doi.org/10.1101/2022.02.18.461833))",
+  c("Redesigned the front and backend of MolEvolvR, a web app for protein characterization (http://jravilab.org/molevolvr; Krol, et al., 2023 _bioRxiv_; [DOI](https://doi.org/10.1101/2022.02.18.461833))",
     "Developed a machine learning (ML) pipeline for classifying antimicrobial resistance (AMR) in bacterial strains (publication in-prep for early 2024 submission)",
     "Listed in 'Acknowledgements' section of publication *provisionally accepted* at *mSystems ([DOI](https://doi.org/10.1101/2020.09.24.301986))",
     "Presented research talks and gave programming workshops at 2 international conferences (Bioconductor 2023 and GLBIO 2023)",
