@@ -81,9 +81,9 @@ tribble(
   "Dept. of Biomedical Informatics, Center for Health Artificial Intelligence, University of Colorado Anschutz School of Medicine - JRaviLab ", 
   "Aurora, CO",
   ## bullets
-  c("Redesigned the front and backend of MolEvolvR, a web app for protein characterization (http://jravilab.org/molevolvr; Krol, et al., 2023 _bioRxiv_; [DOI](https://doi.org/10.1101/2022.02.18.461833))",
+  c("Redesigned the front and backend of MolEvolvR, a web app for protein characterization (http://jravilab.org/molevolvr; Krol, et al., 2023 _bioRxiv_; DOI:https://doi.org/10.1101/2022.02.18.461833)",
     "Developed a machine learning (ML) pipeline for classifying antimicrobial resistance (AMR) in bacterial strains (publication in-prep for early 2024 submission)",
-    "Listed in 'Acknowledgements' section of publication *provisionally accepted* at *mSystems ([DOI](https://doi.org/10.1101/2020.09.24.301986))",
+    "Listed in 'Acknowledgements' section of publication *provisionally accepted* at *mSystems DOI:https://doi.org/10.1101/2020.09.24.301986",
     "Presented research talks and gave programming workshops at 2 international conferences (Bioconductor 2023 and GLBIO 2023)",
     "Mentored 3 PhD students and 1 undergraduate to assist in omics data featurization, model development, and model outcome analysis",
     "Developing two R packages for AMR project (source code for Bioconductor and data for ExperimentHub)",
@@ -145,10 +145,10 @@ tribble(
 
 # Project summaries
 
-**Machine learning classification of Antimicrobial Resistance**: Classification antibiotic resistance of bacterial strains using supervised learning
+**Machine learning-based classification of antimicrobial resistance**:
 
 - Project lead, first author
-- Developed a computational pipeline to gather bacterial genomes and AMR data from public databases, featurize the genomes, develop ML models to classify AMR, and analyze model features to discover novel AMR genes
+- Developed a computational pipeline to gather bacterial genomes and AMR data from public databases, featurize the genomes, develop ML models to classify AMR, and analyze top predictors to discover novel AMR genes
 - Mentored 3 PhD students and 1 undergraduate to assist in omics data featurization, model development, and model outcome analysis
 - Supervised learning with large (over 10k bacterial isolates) sample sizes and tackling class imbalance with weighted loss functions and undersampling
 - Model evaluation using confusion matrix performance metrics such as balanced accuracy, auROC, etc.
