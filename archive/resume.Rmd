@@ -38,39 +38,6 @@ tribble(
   detailed_entries(Degree, Year, Institution, Where, Bullets)
 ```
 
-# Publications
-MolEvolvR: A web-app for characterizing proteins using molecular evolution and phylogeny.
-
-**Jacob D Krol**\*, Joseph T Burke\*, Samuel Z Chen\*, Lo M Sosinski\*, Faisal S Alquaddoomi, Evan P Brenner, Ethan P Wolfe, Vincent P Rubinetti, Shaddai Amolitos, Kellen M Reason, John B Johnston, Janani Ravi
-
-bioRxiv 2022.02.18.461833; doi: https://doi.org/10.1101/2022.02.18.461833 (\* co-primary author)
-\newline
-\newline
-Accurately predicting AR in ESKAPE pathogens using ML.
-**Jacob D Krol**, Ethan P Wolfe, Evan P Brenner, Keenan Manpearl, Vignesh Sridhar, Joe Burke, Jill Bilodeoux, Janani Ravi
-(*In preparation.*). 
-
-# Presentations & posters
-```{r presentations_and_posters}
-tribble(
-  ~ Conference, ~ Year, ~ Title, ~ Where, ~ About,
-  "Great Lakes Bioinformatics Conference", 2023, "MolEvolvR a web-app for protein characterization", "McGill University, Montreal, CA", "Discussed the development and future directions of a web-app I develop: http://jravilab.org/molevolvr",
-  "Great Lakes Bioinformatics Conference", 2023, "How and when to build a web-app or R package?", "McGill Universtiy, Montreal, CA", "Hosted a 4 hour in-person workshop on how to build an R package using automation: devtools and usethis. A github repo for a sample R package I wrote is located at http://www.github.com/jravilab/iprscanr.",
-  "R/Bioconductor", 2023, "MolevolvR a web-app for protein characterization ", "Boston University, Boston, MA", "Presented on MolEvolvR application methodology for the Cancer and Evolution talks section",
-  "CU DBMI Retreat", 2023, "Robust machine learning-based classification of antimicrobial resistance in high-impact pathogens", "CU Anschutz, Aurora, CO", "Presented on highly performant AMR ML classifcation models"
-  ) %>% 
-  detailed_entries(Conference, Year, Title, Where, About)
-```
-
-\newpage
-
-# Funding
-
-- Submitted Fall 2023 NSF GRFP (in-review)
-- Contributed to minor revisions NIH NIAID U01 grant submission (awarded; PI: Janani Ravi)
-- Contributed revision and figures to NIH NIAID R01 grant submission (in-review; PI: Janani Ravi)
-- Submitting Winter 2023 Department of Energy Computational Science Graduate Fellowship (in-preparation)
-
 # Professional Experience
 ```{r professional_experience}
 tribble(
@@ -100,6 +67,48 @@ tribble(
     detailed_entries(Title, Date, Institution, Where, Bullets)
 
 ```
+
+# Publications
+MolEvolvR: A web-app for characterizing proteins using molecular evolution and phylogeny.
+
+**Jacob D Krol**\*, Joseph T Burke\*, Samuel Z Chen\*, Lo M Sosinski\*, Faisal S Alquaddoomi, Evan P Brenner, Ethan P Wolfe, Vincent P Rubinetti, Shaddai Amolitos, Kellen M Reason, John B Johnston, Janani Ravi
+
+bioRxiv 2022.02.18.461833; doi: https://doi.org/10.1101/2022.02.18.461833 (\* co-primary author)
+\newline
+\newline
+Accurately predicting AR in ESKAPE pathogens using ML.
+**Jacob D Krol**, Ethan P Wolfe, Evan P Brenner, Keenan Manpearl, Vignesh Sridhar, Joe Burke, Jill Bilodeoux, Janani Ravi
+(*In preparation.*). 
+
+# Presentations
+```{r presentations}
+tribble(
+  ~ Conference, ~ Year, ~ Title, ~ Where, ~ About,
+  "Great Lakes Bioinformatics Conference", 2023, "MolEvolvR a web-app for protein characterization", "McGill University, Montreal, CA", "Discussed the development and future directions of a web-app I develop: http://jravilab.org/molevolvr",
+  "Great Lakes Bioinformatics Conference", 2023, "How and when to build a web-app or R package?", "McGill Universtiy, Montreal, CA", "Hosted a 4 hour in-person workshop on how to build an R package using automation: devtools and usethis. A github repo for a sample R package I wrote is located at http://www.github.com/jravilab/iprscanr.",
+  "R/Bioconductor", 2023, "MolevolvR a web-app for protein characterization ", "Boston University, Boston, MA", "Presented on MolEvolvR application methodology for the Cancer and Evolution talks section",
+  ) %>% 
+  detailed_entries(Conference, Year, Title, Where, About)
+```
+
+# Posters
+```{r posters}
+tribble(
+  ~ Conference, ~ Year, ~ Title, ~ Where, ~ About,
+  "CU DBMI Retreat", 2023, "Robust machine learning-based classification of antimicrobial resistance in high-impact pathogens", "CU Anschutz, Aurora, CO", "Presented on highly performant AMR classifcation ML models I developed"
+  ) %>% 
+  detailed_entries(Conference, Year, Title, Where, About)
+```
+
+\newpage
+
+# Funding
+
+- Submitted Fall 2023 NSF GRFP (in-review)
+- Contributed to minor revisions NIH NIAID U01 grant submission (awarded; PI: Janani Ravi)
+- Contributed revision and figures to NIH NIAID R01 grant submission (in-review; PI: Janani Ravi)
+- Submitting Winter 2023 Department of Energy Computational Science Graduate Fellowship (in-preparation)
+
 \newpage
 ```{r professional experience 2}
 tribble(
