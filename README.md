@@ -1,3 +1,3 @@
-[Curriculum vitae/Resume](avademic-cv.pdf)
+[Academic CV](avademic-cv.pdf)
 
-[Technical resume](software-resume.pdf)
+[Software resume](software-resume.pdf)
