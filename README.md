@@ -1,3 +1,3 @@
-[Academic CV](avademic-cv.pdf)
+[Academic CV](academic-cv.pdf)
 
 [Software resume](software-resume.pdf)
