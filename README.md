@@ -1,1 +1,1 @@
-[Academic CV](academic-cv.pdf)
+[CV](cv.pdf)
